@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>dev-sp1</name>
+	<name>Release-Branch</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -19,5 +19,6 @@
 	<natures>
 		<nature>com.salesforce.ide.nature.default</nature>
 		<nature>com.salesforce.ide.nature.online</nature>
+		<nature>mega.lightning.lightningNature</nature>
 	</natures>
 </projectDescription>

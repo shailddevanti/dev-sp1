@@ -1,0 +1,8 @@
+<apex:page showHeader="false" title="{!$Label.site.authorization_required}" id="Unauthorized" cache="false">
+       <center>
+           <apex:outputPanel >
+               <apex:image value="{!URLFOR($Resource.ThanksYou)}" style="padding-top:20px" width="700" height="500" alt="We will get back to you soon"/><br/>
+               <apex:image value="{!URLFOR($Resource.WillComeBackSoon)}" style="padding-left:50px" width="200" height="200" alt="We will get back to you soon"/>
+           </apex:outputPanel>  
+      </center>
+</apex:page>

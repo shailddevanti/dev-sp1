@@ -1,0 +1,99 @@
+<apex:page standardController="Job__c" extensions="jobPortalExtension" title="Contact Us" showHeader="false">
+   
+   <head>
+   <style type="text/css">
+
+form    {
+background: -webkit-gradient(linear, bottom, left 10px, from(#CCCCCC), to(#EEEEEE));
+margin:auto;
+position:relative;
+width:750px;
+height:550px;
+padding-top: 100px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 12px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #09C;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+padding:5px;
+
+}
+
+
+input    {
+width:300px;
+display:block;
+border: 1px solid #999;
+height: 25px;
+align:right
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+input[type="checkbox"]{
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+input[type="submit"]
+{
+    border:1px solid red;
+    text-decoration:none;
+    width:100px;
+    font-family:helvetica;
+    color:red;
+    background:url(../images/btn_hover.png) repeat-x;
+}
+
+#checkStuff{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    border:1px solid blue;
+}
+
+body {
+        position: relative;
+        background-image: url("{!$Resource.BackgroundImage1}") !important;
+        padding-top: 100px;
+    }
+    
+    
+</style>
+
+</head>
+   <apex:form >
+      <apex:pageMessages />
+      <apex:outputPanel rendered="{!isJobPosted}">
+      <apex:pageBlock title="" mode="edit">
+        <apex:pageBlockButtons location="bottom">
+           <apex:commandButton value="Post" action="{!postJobs}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Post a Job" collapsible="false" columns="1">
+         <apex:inputText label="Your Name" value="{!employerName}" required="true"/>
+         <apex:inputText label="Your Email" value="{!employerEmail}" required="true"/>
+         <apex:inputText label="Your Contact No" value="{!employerPhone}" required="true"/>
+         <apex:inputField value="{!Job__c.Job_Type__c}" required="true" style="width: 305px !important; height:30px;"/> 
+         <apex:inputField value="{!Job__c.Job_Link__c}"/>      
+         <apex:inputField value="{!Job__c.Job_Summary__c}" required="true"/>
+         <apex:inputField value="{!Job__c.Job_Description__c}" required="true" style="width: 300px !important; height:150px;"/>
+         <apex:inputField value="{!Job__c.Skill_Set_Required__c}" required="true" style="width: 305px !important; height:30px;"/>
+        </apex:pageBlockSection>
+     </apex:pageBlock>
+   </apex:outputPanel>
+   
+   <apex:outputPanel rendered="{!!isJobPosted}">
+       <apex:image value="{!URLFOR($Resource.EmployerThanksYou,'EmployerThanks/et4.jpg')}" style="padding-top:20px" width="700" height="500" alt="We will get back to you soon"/><br/>
+   </apex:outputPanel>  
+   </apex:form>
+</apex:page>

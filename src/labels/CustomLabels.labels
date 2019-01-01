@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Default_Mentor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Mentor</shortDescription>
+        <value>info.shail.singh@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>JobPortal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobPortal</shortDescription>
+        <value>https://dev-yuvasena.cs72.force.com/JobPortal/</value>
+    </labels>
+    <labels>
+        <fullName>UserSignup</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserSignup</shortDescription>
+        <value>https://dev-yuvasena.cs72.force.com/UserSignup/</value>
+    </labels>
+</CustomLabels>

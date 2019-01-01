@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Donation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Donations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Devotee --></label>
+        <name>Devotee__c</name>
+        <relationshipLabel><!-- Donations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Donation Date --></label>
+        <name>Donation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Donation Through --></label>
+        <name>Donation_Through__c</name>
+        <picklistValues>
+            <masterLabel>Bank Transfer</masterLabel>
+            <translation><!-- Bank Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated</masterLabel>
+            <translation><!-- Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

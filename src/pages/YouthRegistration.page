@@ -1,0 +1,105 @@
+<apex:page standardController="Account" extensions="YouthRegistrationController" title="Contact Us" showHeader="false" >
+  <head>
+   <style type="text/css">
+
+form    {
+background: -webkit-gradient(linear, bottom, left 10px, from(#CCCCCC), to(#EEEEEE));
+margin:auto;
+position:relative;
+width:750px;
+height:468px;
+padding-top: 50px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 12px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #09C;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:5px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+input    {
+width:300px;
+display:block;
+border: 1px solid #999;
+height: 25px;
+align:right
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+input[type="checkbox"]{
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+input[type="submit"]
+{
+    border:1px solid red;
+    text-decoration:none;
+    width:100px;
+    font-family:helvetica;
+    color:red;
+    background:url(../images/btn_hover.png) repeat-x;
+}
+
+#checkStuff{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    border:1px solid blue;
+}
+
+body {
+        position: relative;
+        background-image: url("{!$Resource.BackgroundImage1}") !important;
+        padding-top: 50px;
+    }
+    
+    
+</style>
+
+</head>
+   <apex:form >
+    
+      <apex:outputPanel rendered="{!userSignup}">
+      <apex:pageBlock title="" mode="edit">
+        <apex:pageBlockButtons location="bottom">
+           <apex:commandButton value="Save" action="{!saveRegistration}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="CONNECT WITH US" collapsible="false" columns="1">
+         <apex:inputField label="Name" value="{!Account.Name}"/>
+         <apex:inputField value="{!Account.Email__c}" required="true"/>
+         <apex:inputField value="{!Account.Phone}" required="true"/>
+         <apex:inputField id="dob" value="{!Account.Date_of_Birth__c}" required="true" styleClass="input-m"/>
+         <apex:inputField value="{!Account.Visa_Status__c}" required="true"/>
+         <apex:inputField label="Location" value="{!Account.Current_City__c}" required="true"/>
+         <apex:inputField value="{!Account.Highest_Qualification__c}" required="true"/>
+         <apex:inputField value="{!Account.Current_Job_Status__c}" required="true"/>
+         <apex:inputField label="Company If Working" value="{!Account.Company_Name_If_working__c}"/>         
+        </apex:pageBlockSection>
+     </apex:pageBlock>
+   </apex:outputPanel>  
+   
+   <apex:outputPanel rendered="{!!userSignup}">
+       <apex:image value="{!URLFOR($Resource.ThanksYou)}" style="padding-top:20px;padding-left:25px" width="700" height="450" alt="We will get back to you soon"/><br/>
+       <apex:image value="{!URLFOR($Resource.WillComeBackSoon)}" style="padding-left:270px" width="200" height="150" alt="We will get back to you soon"/>
+   </apex:outputPanel>  
+   </apex:form>
+</apex:page>

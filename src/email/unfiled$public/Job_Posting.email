@@ -1,0 +1,5 @@
+Dear {!Job_Posting__c.Candidate__r.Name},
+Hope you are good. I have a Job Opportunity for you.
+
+
+{!Job_Posting__c.Job__r.Name}

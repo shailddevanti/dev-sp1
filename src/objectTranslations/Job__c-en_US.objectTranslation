@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Jobs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Job Description --></label>
+        <name>Job_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Link --></label>
+        <name>Job_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Summary --></label>
+        <name>Job_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Type --></label>
+        <name>Job_Type__c</name>
+        <picklistValues>
+            <masterLabel>Full Time</masterLabel>
+            <translation><!-- Full Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Time</masterLabel>
+            <translation><!-- Part Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temp</masterLabel>
+            <translation><!-- Temp --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Posted By --></label>
+        <name>Posted_By__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skill Set Required --></label>
+        <name>Skill_Set_Required__c</name>
+        <picklistValues>
+            <masterLabel>Animal Care</masterLabel>
+            <translation><!-- Animal Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Management</masterLabel>
+            <translation><!-- Business Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Studies</masterLabel>
+            <translation><!-- Business Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleaning</masterLabel>
+            <translation><!-- Cleaning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservation Manufacturing</masterLabel>
+            <translation><!-- Conservation Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction and Infrastructure</masterLabel>
+            <translation><!-- Construction and Infrastructure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driving</masterLabel>
+            <translation><!-- Driving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education and Social Sciences</masterLabel>
+            <translation><!-- Education and Social Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fishing</masterLabel>
+            <translation><!-- Fishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forestry and Mining</masterLabel>
+            <translation><!-- Forestry and Mining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health and Community</masterLabel>
+            <translation><!-- Health and Community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labour</masterLabel>
+            <translation><!-- Labour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property</masterLabel>
+            <translation><!-- Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science</masterLabel>
+            <translation><!-- Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunication</masterLabel>
+            <translation><!-- Telecommunication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tourism and Recreation Farming</masterLabel>
+            <translation><!-- Tourism and Recreation Farming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport and Logistics</masterLabel>
+            <translation><!-- Transport and Logistics --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
